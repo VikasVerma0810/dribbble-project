@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    /* height: 100%; */
+    width: 100%;
+}
+
+
+#nav{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 2vw;
+    margin-bottom: 6vh;
+}
+
+#nav-left{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   
+}
+
+#nav-left h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#nav-right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav img{
+    height: 120px;
+}
+
+#nav-right button{
+    margin-right: 10px;
+}
+
+#login{
+    border: none;
+    background-color: rgb(250, 253, 255);
+    font-weight: 600;
+}
+
+#signup{
+    padding: 7px 15px;
+    color: white;
+    border-radius: 20px;
+    background-color: #000;
+    font-weight: 700;
+    border: none;
+}
+
+
+#content{
+    height: calc(100% - 120px);
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+#content h3{
+    background-color: rgb(245, 103, 197);
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 30px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+#content h1{
+    font-size: 80px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 100;
+    line-height: 70px;
+}
+
+#content h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#content button{
+    padding: 16px 20px;
+    color: white;
+    border-radius: 24px;
+    background-color: #000;
+    font-weight: 700;
+    margin: 20px 0px;
+    border: none;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#bottom{
+    height: 360px;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    height: 100%;
+    width: 280px;
+    background-color: royalblue;
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 40px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem .hero-text{
+    position: absolute;
+    top:70%;
+    left:8%;
+    color:white;
+}
+
+
+#page2{
+
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+    padding: 15px;
+    padding-top: 90px;
+}
+
+#page2 h1{
+    text-align: center;
+    /* margin: 50px 0px 10px 0px; */
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.box{
+    height: 280px;
+    width: 350px;
+    /* background-color: red; */
+    display: inline-block;
+    margin: 7px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(142, 139, 139);
+    position: relative;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom-box{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.795));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.3s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.box:hover .bottom-box{
+    bottom: 0;
+}
+
+.bottom-box h5{
+    font-size: 15px;
+}
+
+.bottom-box  i{
+    padding: 8px 9px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    object-position: center;
+}
+
+
+#btn-3{
+    padding: 14px 26px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 16px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: rgb(252, 252, 253);
+}
+
+#page3{
+    height: fit-content;
+    width: 100%;
+    padding: 70px 150px;
+    background-color: rgb(242, 183, 106);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page3 h1{
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 75px;
+    margin-bottom: 35px;
+}
+
+#page3 p:nth-child(2n){
+    font-size: 24px;
+    text-align: center;
+    line-height: 37px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+
+#page3 .inner-button button{
+    display: inline-block;
+    margin-right: 25px;
+    padding: 18px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 45px;
+}
+
+.black-btn{
+    background-color: black;
+    color: white;
+}
+
+
+#page3 p:nth-child(1n){
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: 100;
+}
+
+#page3 p:nth-child(1n) a{
+    color: black;
+    font-weight: 100;
+}
+
+#container{
+    width: 100%;
+    /* background-color: red; */
+    padding: 50px 0px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+#container .inner{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }    
+}
+
+
+ #container .inner .bottom-scroll-box{
+    height: 100%;
+    width: 250px;
+    margin: 25px;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  rgb(180 172 172) 6px -6px 0px -3px, rgb(181 163 163 / 72%) 9px -9px 0px -3px;
+    position: relative;
+   
+}
+
+#container .inner .bottom-scroll-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+
+#footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding:35px 60px;
+    
+}
+
+#left-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+}
+
+#right-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+}
+
+#left-footer h4, #right-footer h4{
+    font-weight: 500;
+}
